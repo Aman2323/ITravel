@@ -13,6 +13,7 @@ public class UserController {
 	@RequestMapping(value="/movie/{name}", method = RequestMethod.GET)
 	public String getMovie(@PathVariable String name, ModelMap model) {
 
+		
 		model.addAttribute("movie", name);
 		return "list";
 
